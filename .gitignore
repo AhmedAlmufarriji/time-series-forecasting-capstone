@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Generated / temporary outputs
+*.log
+*.tmp
+*.cache
+outputs/
+artifacts/
+
+# Large local data copies (the notebook fetches the official course dataset)
+data/
