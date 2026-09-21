@@ -4,7 +4,8 @@
 
 A capstone project for **SDAIA Academy — Time Series Forecasting for AI Systems**, focused on forecasting a daily workforce-demand series that experiences a sustained structural break.
 
-**Author:** Ahmed Almufarriji  
+**Team Leader:** Ahmed Almufarriji  
+**Team Member:** Abdulaziz Bakhadlaq  
 **Programme:** SDAIA Academy — Time Series Forecasting for AI Systems  
 **Cohort:** September 2026  
 **Course reference:** https://mohammadyusif.github.io/time-series-forecasting-ai-systems/  
