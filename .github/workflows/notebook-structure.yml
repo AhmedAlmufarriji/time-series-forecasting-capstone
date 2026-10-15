@@ -1,0 +1,32 @@
+name: Capstone notebook integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  check-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate notebook and documentation structure
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          notebook = Path("time_series_forecasting_capstone.ipynb")
+          obj = json.loads(notebook.read_text(encoding="utf-8"))
+          assert obj.get("nbformat") == 4
+          assert any(cell.get("cell_type") == "code" for cell in obj["cells"])
+          assert len(obj["cells"]) >= 10
+          for path in [
+              "README.md",
+              "TECHNICAL_DOCUMENTATION.md",
+              "RUBRIC_CHECKLIST.md",
+              "docs/PROJECT_BRIEF.md",
+          ]:
+              assert Path(path).is_file(), path
+          print("Valid notebook and technical documentation")
+          PY

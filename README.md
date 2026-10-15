@@ -91,6 +91,18 @@ No API key, credential, paid service, or private dataset is required.
 
 See `TECHNICAL_DOCUMENTATION.md` for the forecasting architecture and `RUBRIC_CHECKLIST.md` for a criterion-by-criterion grading check.
 
+## Quick project brief
+
+For recruiters or collaborators, see the [one-page project brief](docs/PROJECT_BRIEF.md) summarizing the forecasting problem, approach and evaluation limitations.
+
+## Repository validation
+
+[Notebook structure checks](.github/workflows/notebook-structure.yml) validate Jupyter JSON integrity and documentation links on every push. They do not re-run the heavy forecasting experiments; use **Open in Colab** above for full execution.
+
+## More data science projects
+
+Explore [my Data Science & Analytics Portfolio](https://github.com/AhmedAlmufarriji/data-science-analytics-portfolio) for Python, machine learning, SQL, MongoDB and business intelligence projects.
+
 ## Programme acknowledgment
 
 Completed under the **SDAIA Academy — Time Series Forecasting for AI Systems** programme, September 2026 cohort.
